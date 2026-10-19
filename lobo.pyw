@@ -1,14 +1,3 @@
-"""
-LOBO – a Dynamic-Island style productivity widget at the top of your screen.
-
-  * Move cursor to top-center edge  -> island appears
-  * Click the pill                   -> expands Tasks / Notes panel
-  * Click outside                    -> collapses back to pill
-  * Esc                              -> collapse
-  * Right-click pill                 -> Quit
-
-Data saved next to this script as LOBO_data.json.
-"""
 import json
 import math
 import os
@@ -18,7 +7,7 @@ import tkinter as tk
 import tkinter.font as tkfont
 import random
 
-# ── paths ──────────────────────────────────────────────────────────────────────
+
 if getattr(sys, "frozen", False):
     SCRIPT_DIR = os.path.dirname(os.path.abspath(sys.executable))
 else:
@@ -31,13 +20,13 @@ ROW       = "#171722"
 BORDER    = "#2a2a3a"
 FG        = "#f4f4fa"
 DIM       = "#8b8ba6"
-ACC       = "#ffd700"   # bright gold
-ACC2      = "#ffb300"   # warm amber
-BODY      = "#ffe27d"   # sunshine yellow
-BODY_DONE = "#ffd700"   # gold when all done
-BLUSH     = "#ffb347"   # warm orange blush
-INK       = "#2a1a10"   # dark ink
-TRANS     = "#010203"   # transparent key colour
+ACC       = "#ffd700" 
+ACC2      = "#ffb300" 
+BODY      = "#ffe27d"  
+BODY_DONE = "#ffd700" 
+BLUSH     = "#ffb347"  
+INK       = "#2a1a10"  
+TRANS     = "#010203"   
 
 PILL_W, PILL_H = 260, 44
 OPEN_W, OPEN_H = 370, 480
